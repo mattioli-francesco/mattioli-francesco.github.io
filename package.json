@@ -1,8 +1,4 @@
 {
-  "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "^1.4.0",
-    "prettier": "^3.1.1"
-  },
   "name": "mattioli-francesco.github.io",
   "version": "1.0.0",
   "description": "<div align=\"center\">",
@@ -20,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/mattioli-francesco/mattioli-francesco.github.io/issues"
   },
-  "homepage": "https://github.com/mattioli-francesco/mattioli-francesco.github.io#readme"
+  "homepage": "https://github.com/mattioli-francesco/mattioli-francesco.github.io#readme",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "prettier": "^2.8.8"
+  }
 }
