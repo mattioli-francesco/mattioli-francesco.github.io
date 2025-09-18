@@ -1,6 +1,54 @@
 ---
 layout: default
 ---
+<div class="post">
+  <header class="post-header">
+    {% unless page.hide_title %}
+      <h1 class="post-title">
+        {{ page.title }}
+      </h1>
+    {% endunless %}
+
+    {% unless page.hide_description %}
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    {% endunless %}
+  </header>
+
+  <article style="text-align:center;">
+    {% if page.cv_pdf %}
+      <p style="margin-bottom: 1rem; font-size: 1.1rem;">
+        Download my CV here
+        <a
+          {% if page.cv_pdf contains '://' %}
+            href="{{ page.cv_pdf }}"
+          {% else %}
+            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cv-download-icon"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      </p>
+
+      <iframe
+        src="{% if page.cv_pdf contains '://' %}{{ page.cv_pdf }}{% else %}{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}{% endif %}"
+        width="80%"
+        height="1000px"
+        style="border:none;"
+      ></iframe>
+    {% else %}
+      <p>No CV uploaded yet.</p>
+    {% endif %}
+  </article>
+</div>
+
+{% comment %} ---
+layout: default
+---
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
@@ -124,4 +172,4 @@ layout: default
       </div>
     </article>
   </div>
-{% endunless %}
+{% endunless %} {% endcomment %}

@@ -1,0 +1,75 @@
+- university: "Bocconi University"
+
+  roles:
+    - role: "Lecturer"
+
+      courses:
+        - title: "20355 - Maths/Stats preparatory course for MSc in Politics and Policy Analysis"
+          year: "2024/25"
+          modules:
+            - name: "Review of Statistics"
+              slides: "/assets/teaching/20355/stats.pdf"
+            - name: "Review of OLS Regression"
+              slides: "/assets/teaching/20355/ols_regression.pdf"
+            - name: "Introduction to STATA"
+
+        - title: "20886 - Foundations of Social Sciences (Empirical Research Methods and Data Analysis)"
+          url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=20886&anno=2025"
+          year: "2023/24"
+          modules:
+            - name: "Regression Discontinuity Design"
+              code: "/assets/teaching/20886/diff-in-diff.do"
+              data: "/assets/teaching/20886/BNPT_AER2013_mod.dta"
+            - name: "Difference-in-Differences"
+              code: "/assets/teaching/20886/diff-in-diff.do"
+              data_list:
+                - name: "Data 1"
+                  url: "/assets/teaching/20886/CK_AER1994_mod.dta"
+                - name: "Data 2"
+                  url: "/assets/teaching/20886/event_study.dta"
+
+        - title: "20612 - Political Science (Topics in Comparative Politics)"
+          url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=20612&anno=2025"
+          year: "2023/24"
+          modules:
+            - name: "Workshop on Discrete choice models in STATA"
+              slides: "/assets/teaching/20612/discrete_choice_models.pdf"
+              code: "/assets/teaching/20612/discrete_choice_models.do"
+              data: "/assets/teaching/20612/ESS10_mod.dta"
+            - name: "Module on Voter Participation"
+              slides: "/assets/teaching/20612/voter_participation.pdf"
+
+    - role: "Teaching Assistant"
+
+      courses:
+        - title: "20886 - Foundations of Social Sciences (Empirical Research Methods and Data Analysis)"
+          url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=20886&anno=2025"
+          year: "2023/24 - 2024/25"
+
+        - title: "20612 - Political Science (Topics in Comparative Politics)"
+          url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=20612&anno=2025"
+          year: "2023/24"
+
+        - title: "20615 - Population Dynamics and Policies"
+          url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=20615&anno=2024"
+          year: "2023/24"
+
+        - title: "30681 - Social Media and Democracy"
+          url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=30681&anno=2026"
+          year: "2025/26"
+
+        - title: "30280 - Applications for Management"
+          url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30280&anno=2026"
+          year: "2022/23 - 2023/24 - 2024/25 - 2025/26"
+
+        - title: "30264 - Public Finance"
+          url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30264&anno=2024"
+          year: "2022/23 - 2023/24"
+
+        - title: "30178 - International Banking"
+          url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=30178&anno=2025"
+          year: "2023/24 - 2024/25"
+
+        - title: "30006 - Financial Markets and Institutions"
+          url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30006&anno=2024"
+          year: "2023/24"

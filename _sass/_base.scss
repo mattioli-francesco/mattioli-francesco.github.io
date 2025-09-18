@@ -401,7 +401,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       img {
@@ -712,6 +712,7 @@ footer.sticky-bottom {
   }
 
   h2 {
+    margin-top: 3rem;
     margin-bottom: 1rem;
 
     span {
@@ -722,8 +723,8 @@ footer.sticky-bottom {
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: 0rem;
+    margin-top: 0rem;
     text-align: right;
   }
 
@@ -768,11 +769,11 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: none; // no dashed underline
+          text-decoration: none; // no default underline
 
           &:hover {
-            border-bottom-style: solid;
-            text-decoration: none;
+            text-decoration: underline; // subtle cue on hover (optional)
           }
         }
 
@@ -783,12 +784,12 @@ footer.sticky-bottom {
 
         > span.more-authors {
           color: var(--global-text-color-light);
-          border-bottom: 1px dashed var(--global-text-color-light);
+          border-bottom: none; // remove dashed underline here too
           cursor: pointer;
 
           &:hover {
             color: var(--global-text-color);
-            border-bottom: 1px dashed var(--global-text-color);
+            text-decoration: underline; // optional hover effect
           }
         }
       }
@@ -874,6 +875,103 @@ footer.sticky-bottom {
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+  }
+}
+
+/* ===============================
+   Teaching page/module
+   =============================== */
+
+.teaching {
+  /* University name: bold, a bit larger */
+  .university .name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .university .years {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+
+  /* Roles (Lecturer, Teaching Assistant): bold */
+  .role {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .role .role-name {
+    font-weight: 700;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  /* Course list: keep bullets + indentation */
+  .course-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .course {
+    margin: 0.35rem 0 0.75rem;
+
+    .title {
+      font-weight: normal;
+      line-height: 1.25;
+    }
+
+    /* Year under the title: lighter gray */
+    .year {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      font-weight: 400;
+      margin-top: 0.15rem;
+    }
+  }
+
+  /* Modules list: normal dash as bullet, aligned with text */
+  .modules {
+    list-style-type: "– "; /* en dash with space */
+    padding-left: 1.5rem; /* indent so dash sits nicely */
+    margin: 0.25rem 0;
+  }
+
+  .modules > li.module-line {
+    margin: 0.25rem 0;
+  }
+
+  /* Buttons inside modules */
+  .module-line .btn {
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  /* General button styling for teaching page */
+  a.btn {
+    border: 1px solid var(--global-text-color);
+    color: var(--global-text-color);
+    background: transparent;
+    box-shadow: none; /* neutralize z-depth */
+    padding: 0.25rem 1rem;
+  }
+
+  a.btn:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+/* Optional small-screen tweaks */
+@media (max-width: 576px) {
+  .teaching .university .name {
+    font-size: 1.05rem;
+  }
+  .teaching .course .year {
+    font-size: 0.88rem;
   }
 }
 
@@ -1305,7 +1403,7 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
-// popover is used for annotation in bib.liquid
+// popover is used for annotation in bib-publications.liquid
 .popover {
   background-color: var(--global-bg-color);
   border-color: var(--global-divider-color);

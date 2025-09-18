@@ -1,0 +1,7 @@
+<div class="projects data-projects">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {% for data_project in site.data_projects %}
+      {% include data_projects.liquid data_project=data_project %}
+    {% endfor %}
+  </div>
+</div>

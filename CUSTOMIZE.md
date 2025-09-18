@@ -148,7 +148,7 @@ There are several custom bibtex keywords that you can use to affect how the entr
 - `supp`: Adds a "Supp" button to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
 - `website`: Adds a "Website" button redirecting to the specified link
 
-You can implement your own buttons by editing the [\_layouts/bib.liquid](_layouts/bib.liquid) file.
+You can implement your own buttons by editing the [\_layouts/bib-publications.liquid](_layouts/bib-publications.liquid) file.
 
 ## Changing theme color
 
@@ -232,7 +232,7 @@ To remove the publications, you can:
 
 You can also:
 
-- delete the [\_layouts/bib.liquid](_layouts/bib.liquid) file
+- delete the [\_layouts/bib-publications.liquid](_layouts/bib-publications.liquid) file
 - delete [\_includes/bib_search.liquid](_includes/bib_search.liquid)
 - delete [\_includes/citation.liquid](_includes/citation.liquid)
 - delete [\_includes/selected_papers.liquid](_includes/selected_papers.liquid)

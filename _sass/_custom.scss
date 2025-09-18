@@ -1,0 +1,150 @@
+/* Remove top border only on About page */
+footer.no-border {
+  border-top: none !important;
+}
+
+/* Add a thin divider under the headings for Working Papers and Works in Progress */
+.publications h2.section-title + .bib.wp,
+.publications h2.section-title + .bib.wip {
+  border-top: 1px solid var(--global-divider-color);
+  margin-top: 0.75rem; /* space between heading and rule */
+  padding-top: 0.75rem; /* space between rule and list */
+}
+
+/* Bigger, hoverable CV PDF icon */
+.cv-download-icon {
+  margin-left: 0.25rem;
+  font-size: 1.6rem; /* larger size */
+  color: var(--global-text-color); /* default text color */
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.cv-download-icon:hover {
+  color: var(--global-hover-color); /* use theme hover color */
+  transform: scale(1.2); /* subtle zoom */
+  text-decoration: none;
+}
+
+/* Brand link hover & pointer */
+.navbar.navbar-light .navbar-brand.title {
+  color: var(--global-text-color);
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.navbar.navbar-light .navbar-brand.title:hover {
+  color: var(--global-hover-color); /* matches the theme hover color */
+  text-decoration: none; /* keep it clean (no underline) */
+}
+
+// /* LinkedIn brand blue (normal state) */
+// .navbar-brand.social a .fa-linkedin::before,
+// .navbar-brand.social a .fa-linkedin-in::before,
+// .social .contact-icons .fa-linkedin::before,
+// .social .contact-icons .fa-linkedin-in::before {
+//   color: #0a66c2; /* no !important */
+// }
+
+// /* ORCID brand green (normal state) */
+// .navbar-brand.social a .ai-orcid::before,
+// .social .contact-icons .ai-orcid::before {
+//   color: #a6ce39;
+// }
+
+// /* Make all icon glyphs baseline-center */
+// .navbar-brand.social a i,
+// .social .contact-icons a i {
+//   vertical-align: middle;
+// }
+
+// /* === Google Scholar: 64×64 circle, glyph does NOT recolor on hover === */
+
+// /* Container (the circle) */
+// .navbar-brand.social a .ai-google-scholar,
+// .social .contact-icons .ai-google-scholar {
+//   /* lock size to match your other icons */
+//   display: inline-block;
+//   width: 64px;
+//   height: 64px;
+//   line-height: 64px;
+//   text-align: center;
+//   border-radius: 50%;
+//   background-color: #4285f4;
+
+//   /* define a private glyph color variable */
+//   --scholar-glyph: #ffffff; /* light mode default */
+// }
+
+// /* Dark mode: glyph turns black, keep circle blue */
+// html[data-theme="dark"] .navbar-brand.social a .ai-google-scholar,
+// html.dark .navbar-brand.social a .ai-google-scholar,
+// html[data-theme="dark"] .social .contact-icons .ai-google-scholar,
+// html.dark .social .contact-icons .ai-google-scholar {
+//   --scholar-glyph: #000000;
+// }
+
+// /* The glyph itself */
+// .navbar-brand.social a .ai-google-scholar::before,
+// .social .contact-icons .ai-google-scholar::before {
+//   font-size: 44px;
+//   position: relative;
+//   top: -6px; /* optical vertical centering */
+//   color: var(--scholar-glyph);
+// }
+
+// /* Hover: ONLY change the circle background */
+// .navbar-brand.social a:hover .ai-google-scholar,
+// .social .contact-icons a:hover .ai-google-scholar {
+//   background-color: var(--global-theme-color);
+// }
+
+// /* Crucial: freeze glyph color on hover (override theme hover rule) */
+// .navbar-brand.social a:hover .ai-google-scholar::before,
+// .social .contact-icons a:hover .ai-google-scholar::before {
+//   color: var(--scholar-glyph) !important;
+// }
+
+// /* === ResearchGate: 64×64 circle, glyph does NOT recolor on hover === */
+
+// /* Container (the circle) */
+// .navbar-brand.social a .ai-researchgate,
+// .social .contact-icons .ai-researchgate {
+//   display: inline-block;
+//   width: 64px;
+//   height: 64px;
+//   line-height: 64px;
+//   text-align: center;
+//   border-radius: 50%;
+//   background-color: #00ccbb; /* ResearchGate teal */
+
+//   --rg-glyph: #ffffff; /* Light mode: white glyph */
+// }
+
+// /* Dark mode: glyph black, keep circle teal */
+// html[data-theme="dark"] .navbar-brand.social a .ai-researchgate,
+// html.dark .navbar-brand.social a .ai-researchgate,
+// html[data-theme="dark"] .social .contact-icons .ai-researchgate,
+// html.dark .social .contact-icons .ai-researchgate {
+//   --rg-glyph: #000000;
+// }
+
+// /* The glyph itself */
+// .navbar-brand.social a .ai-researchgate::before,
+// .social .contact-icons .ai-researchgate::before {
+//   font-size: 44px;
+//   position: relative;
+//   top: -7px; /* optical vertical centering */
+//   color: var(--rg-glyph);
+// }
+
+// /* Hover: ONLY change the circle background */
+// .navbar-brand.social a:hover .ai-researchgate,
+// .social .contact-icons a:hover .ai-researchgate {
+//   background-color: var(--global-theme-color);
+// }
+
+// /* Freeze glyph color on hover */
+// .navbar-brand.social a:hover .ai-researchgate::before,
+// .social .contact-icons a:hover .ai-researchgate::before {
+//   color: var(--rg-glyph) !important;
+// }

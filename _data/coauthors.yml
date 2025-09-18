@@ -1,34 +1,43 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"nannicini":
+  - firstname: ["Tommaso"]
+    url: https://www.tommasonannicini.eu
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"minello":
+  - firstname: ["Alessandra"]
+    url: https://alessandraminello.com
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"mencarini":
+  - firstname: ["Letizia"]
+    url: https://sps.unibocconi.eu/people/letizia-mencarini
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"vignoli":
+  - firstname: ["Daniele"]
+    url: https://danielevignoli.com
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"aassve":
+  - firstname: ["Arnstein"]
+    url: https://faculty.unibocconi.eu/arnsteinaassve/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"macmillan":
+  - firstname: ["Ross"]
+    url: https://pure.ul.ie/en/persons/ian-ross-macmillan
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"conzo":
+  - firstname: ["Pierluigi"]
+    url: https://www.giurisprudenza.unito.it/do/docenti.pl/Alias?pierluigi.conzo#tab-profilo
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"gatta":
+  - firstname: ["Arianna"]
+    url: https://ariannagatta.com
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"cavalli":
+  - firstname: ["Nicolò"]
+    url: https://faculty.unibocconi.it/nicolocavalli/
+
+"toffolutti":
+  - firstname: ["Veronica"]
+    url: https://www.qmul.ac.uk/wiph/people/profiles/toffolutti-veronica-.html
+
+"chiocchio":
+  - firstname: ["Francesco"]
+    url: https://fchiocchio.github.io
