@@ -10,14 +10,14 @@ layout: default
 
 <div class="post">
   {% if page.hide_title != true or page.hide_description != true %}
-  <header class="post-header">
-    {% unless page.hide_title %}
-      <h1 class="post-title">{{ page.title }}</h1>
-    {% endunless %}
-    {% unless page.hide_description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endunless %}
-  </header>
+    <header class="post-header">
+      {% unless page.hide_title %}
+        <h1 class="post-title">{{ page.title }}</h1>
+      {% endunless %}
+      {% unless page.hide_description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endunless %}
+    </header>
   {% endif %}
 
   <article>

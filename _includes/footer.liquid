@@ -14,7 +14,7 @@
 {% if site.footer_fixed %}
   <footer class="fixed-bottom{% if page.layout == 'home' %} no-border{% endif %}" role="contentinfo">
     <div class="container mt-0">
-      {% unless page.layout == "home" %}
+      {% unless page.layout == 'home' %}
         {{ footer_contents }}
       {% endunless %}
     </div>
@@ -26,27 +26,29 @@
     {% endif %}
 
     <div class="container">
-      {% unless page.layout == "home" %}
+      {% unless page.layout == 'home' %}
         {{ footer_contents }}
       {% endunless %}
     </div>
   </footer>
 {% endif %}
 
-{% comment %} {% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
+{% comment %}
+  {% if site.footer_fixed %}
+    <footer class="fixed-bottom" role="contentinfo">
+      <div class="container mt-0">
+        {{ footer_contents }}
+      </div>
+    </footer>
+  {% else %}
+    <footer class="sticky-bottom mt-5" role="contentinfo">
+      {% if site.newsletter.enabled %}
+        {% include newsletter.liquid %}
+      {% endif %}
 
-    <div class="container">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% endif %} {% endcomment %}
+      <div class="container">
+        {{ footer_contents }}
+      </div>
+    </footer>
+  {% endif %}
+{% endcomment %}
