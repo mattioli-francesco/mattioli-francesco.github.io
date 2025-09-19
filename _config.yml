@@ -243,6 +243,11 @@ defaults:
     values:
       sitemap: false
 
+  - scope:
+      path: "projects"
+    values:
+      sitemap: false
+
 sass:
   style: compressed
 
