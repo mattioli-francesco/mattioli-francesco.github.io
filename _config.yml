@@ -221,30 +221,39 @@ plugins:
 
 # Sitemap settings
 defaults:
+  # Never index assets
   - scope:
       path: "assets"
     values:
       sitemap: false
 
-  - scope:
-      path: "assets"
-    values:
-      sitemap: false
-
-  # Exclude all blog content (including tags/categories/pages under /blog)
+  # Exclude all blog content (posts, tags, categories, pagination)
   - scope:
       path: "blog"
     values:
       sitemap: false
 
-  # Exclude the books demo section
+  # Exclude the demo "books" section
   - scope:
       path: "books"
     values:
       sitemap: false
 
+  # Exclude the demo "news" section
+  - scope:
+      path: "news"
+    values:
+      sitemap: false
+
+  # Exclude all projects (including numbered demo projects)
   - scope:
       path: "projects"
+    values:
+      sitemap: false
+
+  # Exclude repositories section
+  - scope:
+      path: "repositories"
     values:
       sitemap: false
 
