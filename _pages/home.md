@@ -2,6 +2,7 @@
 layout: home
 title: home
 permalink: /
+description: "Francesco Mattioli – PhD candidate in Social and Political Science at Bocconi University. Research in political economy and voter behavior."
 # subtitle: <a href='#'>Bocconi University</a>. Address. Contacts. Motto. Etc.
 redirect_from:
   - /about/               # old URL still works
@@ -9,6 +10,7 @@ redirect_from:
 profile:
   align: right
   image: prof_pic.jpg
+  image_alt: "Francesco Mattioli – PhD Candidate in Social and Political Science at Bocconi University"
   image_circular: false # crops the image to make it circular
   more_info: #>
     #<p>555 your office number</p>

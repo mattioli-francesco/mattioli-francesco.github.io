@@ -2,7 +2,7 @@
 layout: default
 permalink: /policy_public/
 title: policy and public
-description:
+description: "Francesco Mattioli – PhD candidate in Social and Political Science at Bocconi University. Research in political economy, economics, politics, culture, institutions, demography, health, policy evaluation, elections, voters, selection, accountability, econometrics, computational methods, causal inference."
 nav: true
 nav_order: 3
 hide_title: true # <- hide the H1 inside the page

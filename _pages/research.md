@@ -2,7 +2,7 @@
 layout: default
 permalink: /research/
 title: research
-description:
+description: "Publications, working papers, and projects on political economy, electoral accountability, voter participation, and causal inference."
 nav: true
 nav_order: 2
 hide_title: true # <- hide the H1 inside the page

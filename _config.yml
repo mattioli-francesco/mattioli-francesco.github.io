@@ -8,7 +8,7 @@ middle_name:
 last_name: Mattioli
 contact_note: #>
 #  You can even add a little note about which of these is the best way to reach you.
-description: #> # the ">" symbol means to ignore newlines until "footer_text:"
+description: Francesco Mattioli – PhD candidate in Social and Political Science at Bocconi University. Research in political economy, economics, politics, culture, institutions, demography, health, policy evaluation, elections, voters, selection, accountability, econometrics, computational methods, causal inference. #> # the ">" symbol means to ignore newlines until "footer_text:"
 #  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: #>
 #  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -211,6 +211,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-terser

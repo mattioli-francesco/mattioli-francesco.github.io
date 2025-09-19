@@ -3,6 +3,7 @@ layout: cv
 title: cv
 permalink: /cv/
 cv_pdf: mattioli_cv.pdf # put your file in assets/pdf/my_cv.pdf
+description: "Curriculum Vitae of Francesco Mattioli – PhD candidate at Bocconi University. Academic background, research, and teaching experience."
 nav: true
 nav_order: 6
 hide_title: true # <- hide the H1 inside the page

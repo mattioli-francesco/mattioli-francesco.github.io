@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: "Teaching political science and empirical methods at Bocconi University, with course slides, code, and datasets available to students."
 nav: true
 nav_order: 4
 hide_title: true
