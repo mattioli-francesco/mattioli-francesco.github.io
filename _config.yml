@@ -227,10 +227,21 @@ defaults:
       sitemap: false
 
   - scope:
-      path: ""
-      type: data_projects
+      path: "assets"
     values:
-      layout: none
+      sitemap: false
+
+  # Exclude all blog content (including tags/categories/pages under /blog)
+  - scope:
+      path: "blog"
+    values:
+      sitemap: false
+
+  # Exclude the books demo section
+  - scope:
+      path: "books"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
