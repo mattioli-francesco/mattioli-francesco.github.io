@@ -122,13 +122,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
+#   - name: Google Blog
+#     posts:
+#       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#         published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -145,13 +145,13 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
-    output: true
+    output: false
   data_projects:
     output: true
     permalink: /data/:name/
@@ -222,40 +222,52 @@ plugins:
 # Sitemap settings
 defaults:
   # Never index assets
-  - scope:
-      path: "assets"
-    values:
-      sitemap: false
+  - scope: { path: "assets" }
+    values: { sitemap: false }
 
-  # Exclude all blog content (posts, tags, categories, pagination)
-  - scope:
-      path: "blog"
-    values:
-      sitemap: false
+  # Exclude entire collections by TYPE (source folders: _posts, _books, _projects, _repositories, _news, _data_projects)
+  - scope: { path: "", type: posts }
+    values: { sitemap: false }
+  - scope: { path: "", type: books }
+    values: { sitemap: false }
+  - scope: { path: "", type: projects }
+    values: { sitemap: false }
+  - scope: { path: "", type: repositories }
+    values: { sitemap: false }
+  - scope: { path: "", type: news }
+    values: { sitemap: false }
 
-  # Exclude the demo "books" section
-  - scope:
-      path: "books"
-    values:
-      sitemap: false
+  # Exclude the index pages for those sections (these are regular pages under _pages/)
+  - scope: { path: "books" }
+    values: { sitemap: false }
+  - scope: { path: "projects" }
+    values: { sitemap: false }
+  - scope: { path: "blog" }
+    values: { sitemap: false }
+  - scope: { path: "repositories" }
+    values: { sitemap: false }
 
-  # Exclude the demo "news" section
-  - scope:
-      path: "news"
-    values:
-      sitemap: false
+  # Exclude the SOURCE folders for collections
+  - scope: { path: "_books" }
+    values: { sitemap: false }
+  - scope: { path: "_projects" }
+    values: { sitemap: false }
+  - scope: { path: "_news" }
+    values: { sitemap: false }
+  - scope: { path: "_repositories" } # only if you actually have this collection
+    values: { sitemap: false }
 
-  # Exclude all projects (including numbered demo projects)
-  - scope:
-      path: "projects"
-    values:
-      sitemap: false
-
-  # Exclude repositories section
-  - scope:
-      path: "repositories"
-    values:
-      sitemap: false
+  # Exclude generated items coming from underscore source folders
+  - scope: { path: "_books" }
+    values: { sitemap: false }
+  - scope: { path: "_projects" }
+    values: { sitemap: false }
+  - scope: { path: "_news" }
+    values: { sitemap: false }
+  - scope: { path: "_repositories" } # only if you actually have this collection
+    values: { sitemap: false }
+  - scope: { path: "_pages/dropdown" }
+    values: { sitemap: false }
 
 sass:
   style: compressed
@@ -282,13 +294,13 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
   books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
