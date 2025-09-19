@@ -37,6 +37,48 @@ footer.no-border {
   text-decoration: none; /* keep it clean (no underline) */
 }
 
+/* Force font-display: swap for webfonts to improve FCP */
+
+@font-face {
+  font-family: "tabler-icons";
+  src: url("/assets/fonts/tabler-icons-outline.woff2?v=3.20.0") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  src: url("/assets/webfonts/fa-brands-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url("/assets/webfonts/fa-regular-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url("/assets/webfonts/fa-solid-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Academicons";
+  src: url("/assets/fonts/academicons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 // /* LinkedIn brand blue (normal state) */
 // .navbar-brand.social a .fa-linkedin::before,
 // .navbar-brand.social a .fa-linkedin-in::before,
