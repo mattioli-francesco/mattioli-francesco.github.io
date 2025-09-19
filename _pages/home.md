@@ -40,7 +40,7 @@ Methodologically, I combine causal inference and computational methods to analyz
 
 My advisors are [Tommaso Nannicini](https://www.tommasonannicini.eu/en/research/), [Vincenzo Galasso](https://www.vincenzogalasso.it), and [Maria Carreri](https://www.mariacarreri.com).
 
-My research has featured in [The Economist](https://www.economist.com/graphic-detail/2022/09/23/the-difficulties-of-getting-an-abortion-in-italy), [The Washington Post](https://www.washingtonpost.com/world/interactive/2021/us-abortion-laws-worldwide/), and [Vox](https://www.vox.com/2022/9/24/23369572/italy-election-meloni-brothers-of-italy-far-right) among others.
+My research has been featured in [The Economist](https://www.economist.com/graphic-detail/2022/09/23/the-difficulties-of-getting-an-abortion-in-italy), [The Washington Post](https://www.washingtonpost.com/world/interactive/2021/us-abortion-laws-worldwide/), and [Vox](https://www.vox.com/2022/9/24/23369572/italy-election-meloni-brothers-of-italy-far-right) among others.
 
 Prior to starting my PhD, I obtained an MSc in Economic and Social Sciences at Bocconi, and worked at the [Dondena Centre for Research on Social Dynamics and Public Policy](https://dondena.unibocconi.eu) on the ERC-funded project [IFAMID](https://cordis.europa.eu/project/id/694145).
 
