@@ -11,21 +11,21 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "research",
-          description: "",
+          description: "Publications, working papers, and projects on political economy, electoral accountability, voter participation, and causal inference.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-policy-and-public",
           title: "policy and public",
-          description: "",
+          description: "Francesco Mattioli – PhD candidate in Social and Political Science at Bocconi University. Research in political economy, economics, politics, culture, institutions, demography, health, policy evaluation, elections, voters, selection, accountability, econometrics, computational methods, causal inference.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/policy_public/";
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Teaching political science and empirical methods at Bocconi University, with course slides, code, and datasets available to students.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "",
+          description: "Curriculum Vitae of Francesco Mattioli – PhD candidate at Bocconi University. Academic background, research, and teaching experience.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
