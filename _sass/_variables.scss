@@ -8,7 +8,9 @@
 // Colors
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
-$orange-color: #da8207 !default; /////// edit here
+$orange-color-light: #e44100 !default; // for light mode text/links
+$orange-color-dark: #e4901a !default; // for dark mode accents (your current one)
+$orange-color: $orange-color-light !default; // Use light-mode orange as base
 $blue-color: #0076df !default;
 $blue-color-dark: #00369f !default;
 $cyan-color: #2698ba !default;
@@ -34,7 +36,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($orange-color, 0.15); /////// edit here
+$code-bg-color-light: rgba($orange-color, 0.14); /////// edit here
 $code-bg-color-dark: #2c3237 !default; /////// edit here
 
 // Font awesome location
