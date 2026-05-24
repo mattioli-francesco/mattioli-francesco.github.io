@@ -96,5 +96,7 @@ hide_description: true
         </ul>
       {% endfor %}
     </div>
-  {% endfor %}
+
+{% endfor %}
+
 </div>
