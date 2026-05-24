@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "nav-policy-and-public",
-          title: "policy and public",
+        },{id: "nav-policy-and-outreach",
+          title: "policy and outreach",
           description: "Francesco Mattioli – PhD candidate in Social and Political Science at Bocconi University. Research in political economy, economics, politics, culture, institutions, demography, health, policy evaluation, elections, voters, selection, accountability, econometrics, computational methods, causal inference.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/policy_public/";
+            window.location.href = "/policy_outreach/";
           },
         },{id: "nav-teaching",
           title: "teaching",
