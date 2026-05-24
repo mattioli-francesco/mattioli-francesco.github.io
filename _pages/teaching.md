@@ -10,34 +10,37 @@ hide_description: true
 ---
 
 <div class="teaching">
-  {% for uni in site.data.teaching %}
-    <!-- University -->
-    <div class="university">
-      <div class="name">{{ uni.university }}</div>
-      {% if uni.years %}
-        <div class="years">{{ uni.years }}</div>
-      {% endif %}
-    </div>
+  {% for role_block in site.data.teaching %}
+    <!-- Role -->
+    <div class="role">
+      <div class="name role-name" style="font-size: 1.25rem; font-weight: 700;">{{ role_block.role }}</div>
 
-    <!-- Roles -->
-    {% for block in uni.roles %}
-      <div class="role">
-        <div class="role-name">{{ block.role }}</div>
+      {% for uni in role_block.universities %}
+        <!-- University -->
+        <div class="university" style="margin-left: 1.25rem;">
+          <div class="name">{{ uni.university }}</div>
+          {% if uni.years %}
+            <div class="years">{{ uni.years }}</div>
+          {% endif %}
+        </div>
 
         <!-- Courses -->
-        <ul class="course-list">
-          {% for c in block.courses %}
+        <ul class="course-list" style="margin-left: 1.25rem;">
+          {% for c in uni.courses %}
             <li class="course">
               <div class="title">
-                {% assign raw  = c.title | strip %}
-                {% assign code = raw | split: ' ' | first %}
-                {% assign name = raw | remove_first: code | strip %}
-                {% assign name = name | remove_first: '–' | remove_first: '—' | remove_first: '-' | strip %}
-
-                {% if c.url %}
-                  <a href="{{ c.url }}">{{ code }}</a>{% if name != '' %} – {{ name }}{% endif %}
+                {% if c.code %}
+                  {% if c.url %}
+                    <a href="{{ c.url }}">{{ c.code }}</a>{% if c.title %} – {{ c.title }}{% endif %}
+                  {% else %}
+                    {{ c.code }}{% if c.title %} – {{ c.title }}{% endif %}
+                  {% endif %}
                 {% else %}
-                  {{ code }}{% if name != '' %} – {{ name }}{% endif %}
+                  {% if c.url %}
+                    <a href="{{ c.url }}">{{ c.title }}</a>
+                  {% else %}
+                    {{ c.title }}
+                  {% endif %}
                 {% endif %}
               </div>
 
@@ -91,9 +94,7 @@ hide_description: true
             </li>
           {% endfor %}
         </ul>
-      </div>
-    {% endfor %}
-
-{% endfor %}
-
+      {% endfor %}
+    </div>
+  {% endfor %}
 </div>

@@ -1,10 +1,9 @@
-- university: "Bocconi University"
-
-  roles:
-    - role: "Lecturer"
-
+- role: "Lecturer"
+  universities:
+    - university: "Bocconi University"
       courses:
-        - title: "20355 - Maths/Stats preparatory course for MSc in Politics and Policy Analysis"
+        - code: "20355"
+          title: "Maths/Stats preparatory course for MSc in Politics and Policy Analysis"
           year: "2024/25"
           modules:
             - name: "Review of Statistics"
@@ -13,7 +12,8 @@
               slides: "/assets/teaching/20355/ols_regression.pdf"
             - name: "Introduction to STATA"
 
-        - title: "20886 - Foundations of Social Sciences (Empirical Research Methods and Data Analysis)"
+        - code: "20886"
+          title: "Foundations of Social Sciences (Empirical Research Methods and Data Analysis)"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=20886&anno=2025"
           year: "2023/24"
           modules:
@@ -28,7 +28,8 @@
                 - name: "Data 2"
                   url: "/assets/teaching/20886/event_study.dta"
 
-        - title: "20612 - Political Science (Topics in Comparative Politics)"
+        - code: "20612"
+          title: "Political Science (Topics in Comparative Politics)"
           url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=20612&anno=2025"
           year: "2023/24"
           modules:
@@ -39,41 +40,67 @@
             - name: "Module on Voter Participation"
               slides: "/assets/teaching/20612/voter_participation.pdf"
 
-    - role: "Teaching Assistant"
+        - code: "30609"
+          title: "Topics in Politics"
+          url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=30609&anno=2026"
+          year: "2025/26"
+          modules:
+            - name: "Guest lecture “Electoral participation, voter turnout, and consequences of turnout decline”"
+              slides: "/assets/teaching/30609/guest_lecture.pdf"
 
+    - university: "University of Padua"
       courses:
-        - title: "20886 - Foundations of Social Sciences (Empirical Research Methods and Data Analysis)"
+        - title: "Demografia Internazionale"
+          year: "2024/25"
+          modules:
+            - name: "Guest lecture “Scelte riproduttive tra barriere socio-economiche”"
+              slides: "/assets/teaching/demo_padova/padova_lecture.pdf"
+
+- role: "Teaching Assistant"
+  universities:
+    - university: "Bocconi University"
+      courses:
+        - code: "20886"
+          title: "Foundations of Social Sciences (Empirical Research Methods and Data Analysis)"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=20886&anno=2025"
           year: "2023/24 - 2024/25"
 
-        - title: "20612 - Political Science (Topics in Comparative Politics)"
+        - code: "20612"
+          title: "Political Science (Topics in Comparative Politics)"
           url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=20612&anno=2025"
           year: "2023/24"
 
-        - title: "20615 - Population Dynamics and Policies"
+        - code: "20615"
+          title: "Population Dynamics and Policies"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=20615&anno=2024"
           year: "2023/24"
 
-        - title: "30681 - Social Media and Democracy"
+        - code: "30681"
+          title: "Social Media and Democracy"
           url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=30681&anno=2026"
           year: "2025/26"
 
-        - title: "30280 - Applications for Management"
+        - code: "30280"
+          title: "Applications for Management"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30280&anno=2026"
           year: "2022/23 - 2023/24 - 2024/25 - 2025/26"
 
-        - title: "30264 - Public Finance"
+        - code: "30264"
+          title: "Public Finance"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30264&anno=2024"
           year: "2022/23 - 2023/24"
 
-        - title: "30067 - Economic History"
+        - code: "30067"
+          title: "Economic History"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30067&anno=2026"
           year: "2025/26"
 
-        - title: "30178 - International Banking"
+        - code: "30178"
+          title: "International Banking"
           url: "https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=30178&anno=2025"
           year: "2023/24 - 2024/25"
 
-        - title: "30006 - Financial Markets and Institutions"
+        - code: "30006"
+          title: "Financial Markets and Institutions"
           url: "https://didattica.unibocconi.it/ts/tsn_anteprima.php?cod_ins=30006&anno=2024"
           year: "2023/24"

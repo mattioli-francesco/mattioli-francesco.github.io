@@ -110,11 +110,21 @@
     <div class="periodical">{{ entry.note | strip }}</div>
 
     <!-- Links/Buttons -->
-    <div class="links">
+    <div class="links">     
       {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
-        </a>
+        <div class="award">
+          <span class="label"><i class="fa-solid fa-trophy"></i> <strong>Awarded:</strong> </span>
+
+          {% assign parts = entry.award | split: '|' %}
+          {% assign award_label = parts[0] | strip %}
+          {% assign award_url = parts[1] | strip %}
+
+          {% if award_url and award_url != '' %}
+            <a href="{{ award_url }}" target="_blank" rel="noopener">{{ award_label }}</a>
+          {% else %}
+            <span>{{ award_label }}</span>
+          {% endif %}
+        </div>
       {% endif %}
 
       {% if entry.media %}
@@ -133,6 +143,26 @@
               {% endif %}
             {% endfor %}
           </ul>
+        </div>
+      {% endif %}
+
+      {% if entry.presentations %}
+        <div class="presentations">
+          <span class="label"><i class="fa-solid fa-person-chalkboard"></i> <strong>Presented at:</strong> </span>
+          {% assign items = entry.presentations | split: ';;' %}
+          {% for item in items %}
+            {% assign parts = item | split: '|' %}
+            {% assign label = parts[0] | strip %}
+            {% assign url = parts[1] | strip %}
+
+            {% if url and url != '' %}
+              <a href="{{ url }}" target="_blank" rel="noopener">{{ label }}</a>
+            {% else %}
+              <span>{{ label }}</span>
+            {% endif %}
+
+            {%- unless forloop.last %} &middot; {% endunless %}
+          {% endfor %}
         </div>
       {% endif %}
 
@@ -272,12 +302,6 @@
           {% endif %}
         </div>
       {% endif %}
-    {% endif %}
-
-    {% if entry.award %}
-      <div class="award hidden d-print-inline">
-        <p>{{ entry.award | markdownify }}</p>
-      </div>
     {% endif %}
 
     {% if entry.abstract %}
