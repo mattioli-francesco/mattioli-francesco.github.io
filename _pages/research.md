@@ -18,7 +18,9 @@ redirect_from:
 <div class="publications">
 
   <h2 class="section-title">Publications</h2>
-  {% bibliography --file publications --template bib-publications %}
+  <div class="bib pub">
+    {% bibliography --file publications --template bib-publications --group_by none %}
+  </div>
 
   <h2 class="section-title">Working Papers</h2>
   <div class="bib wp">

@@ -3,12 +3,30 @@ footer.no-border {
   border-top: none !important;
 }
 
-/* Add a thin divider under the headings for Working Papers and Works in Progress */
+/* Add matching thin dividers under the research section headings */
+.publications h2.section-title + .bib.pub,
 .publications h2.section-title + .bib.wp,
 .publications h2.section-title + .bib.wip {
   border-top: 1px solid var(--global-divider-color);
   margin-top: 0.75rem; /* space between heading and rule */
   padding-top: 0.75rem; /* space between rule and list */
+}
+
+/* Square home portrait, framed to match the previous head size. */
+.home-portrait {
+  aspect-ratio: 1;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    transform: scale(1.33);
+    transform-origin: 58% 20%;
+  }
 }
 
 /* Bigger, hoverable CV PDF icon */

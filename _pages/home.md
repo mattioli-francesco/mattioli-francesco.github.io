@@ -2,15 +2,15 @@
 layout: home
 title: home
 permalink: /
-description: "Francesco Mattioli – PhD candidate in Social and Political Science at Bocconi University. Research in political economy and voter behavior."
+description: "Francesco Mattioli – Political economist and Max Weber Postdoctoral Fellow at the European University Institute. Research on political selection, voter participation, electoral systems, and accountability."
 # subtitle: <a href='#'>Bocconi University</a>. Address. Contacts. Motto. Etc.
 redirect_from:
   - /about/               # old URL still works
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_alt: "Francesco Mattioli – PhD Candidate in Social and Political Science at Bocconi University"
+  image: picture_mwp.jpg
+  image_alt: "Francesco Mattioli – Max Weber Postdoctoral Fellow at the European University Institute"
   image_circular: false # crops the image to make it circular
   more_info: #>
     #<p>555 your office number</p>
@@ -32,16 +32,16 @@ social: true # includes social icons at the bottom of the page
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD candidate at [Bocconi University](https://www.unibocconi.it/en/programs/phd/phd-social-and-political-science-cohort-2021-22), in the Department of Social and Political Sciences.
+I am a political economist and a [Max Weber Postdoctoral Fellow](https://www.eui.eu/en/academic-units/max-weber-programme-for-postdoctoral-studies) at the [European University Institute](https://www.eui.eu/en/home), affiliated with the [Florence School of Transnational Governance](https://www.eui.eu/en/academic-units/school-of-transnational-governance).
 
-My main research interest is in political economy. In my doctoral research I study current topics in political selection, voter participation, and electoral accountability. I also enjoy working at the intersection between political economy, economics of institutions and culture, demography, and health.
+My research seeks to understand how political institutions operate in democratic systems, and why they succeed or fail at achieving effective outcomes under strain. My agenda focuses on political selection, voter participation, electoral systems, and accountability. More broadly, my work connects political economy, comparative politics, economics of institutions and culture, and demography.
 
 Methodologically, I combine causal inference and computational methods to analyze large-scale administrative data, social media and legislative text corpora, survey and experimental data.
 
 <!-- My advisors are [Tommaso Nannicini](https://www.tommasonannicini.eu/en/research/), [Vincenzo Galasso](https://www.vincenzogalasso.it), and [Maria Carreri](https://www.mariacarreri.com). -->
 
-My research has been featured in [The Economist](https://www.economist.com/graphic-detail/2022/09/23/the-difficulties-of-getting-an-abortion-in-italy), [The Washington Post](https://www.washingtonpost.com/world/interactive/2021/us-abortion-laws-worldwide/), and [Vox](https://www.vox.com/2022/9/24/23369572/italy-election-meloni-brothers-of-italy-far-right) among others.
+My research has been featured in [The Economist](https://www.economist.com/graphic-detail/2022/09/23/the-difficulties-of-getting-an-abortion-in-italy), [The Washington Post](https://www.washingtonpost.com/world/interactive/2021/us-abortion-laws-worldwide/), and [Vox](https://www.vox.com/2022/9/24/23369572/italy-election-meloni-brothers-of-italy-far-right), among other outlets.
 
-Prior to starting my PhD, I obtained an MSc in Economic and Social Sciences at Bocconi, and worked at the [Dondena Centre for Research on Social Dynamics and Public Policy](https://dondena.unibocconi.eu) on the ERC-funded project [IFAMID](https://cordis.europa.eu/project/id/694145).
+I received my PhD in [Social and Political Science](https://www.unibocconi.it/en/programs/phd/phd-social-and-political-science) *cum laude* and my MSc in Economics from [Bocconi University](https://www.unibocconi.it/en). I worked at the [Dondena Centre for Research on Social Dynamics and Public Policy](https://dondena.unibocconi.eu) on the ERC-funded project [IFAMID](https://cordis.europa.eu/project/id/694145).
 
-Contact me at [francesco.mattioli@unibocconi.it](mailto:francesco.mattioli@unibocconi.it) or [mattioli.francesco@phd.unibocconi.it](mailto:mattioli.francesco@phd.unibocconi.it).
+Contact me at [francesco.mattioli@eui.eu](mailto:francesco.mattioli@eui.eu).

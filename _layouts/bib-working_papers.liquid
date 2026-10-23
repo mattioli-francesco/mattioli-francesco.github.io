@@ -176,6 +176,10 @@
       {% if entry.abstract -%}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       {%- endif %}
+      {% if entry.cepr %}
+        <a href="{{ entry.cepr }}" class="btn btn-sm z-depth-0" role="button">CEPR DP</a>
+      {% endif %}
+
       {% if entry.doi -%}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {%- endif %}
