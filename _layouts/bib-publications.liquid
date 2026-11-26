@@ -58,7 +58,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -162,6 +162,7 @@
       {%- if year_text %}, {{ year_text }}{% endif -%}
       {%- if volno_text %}, {{ volno_text }}{% endif -%}
       {%- if pages_text %}, {{ pages_text }}{% endif -%}
+      {%- if entry.note == 'Early View' %}, Early View{% endif -%}
     {% endcapture %}
 
     {%- comment -%} Optional: location and additional_info appended at the end {%- endcomment -%}
@@ -180,9 +181,11 @@
     <div class="periodical">
       {{ entrytype | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% unless entry.note == 'Early View' %}
+      <div class="periodical">
+        {{ entry.note | strip }}
+      </div>
+    {% endunless %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -243,6 +246,20 @@
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+      {% endif %}
+      {% assign earlier_versions = false %}
+      {% if entry.cepr or entry.iza or entry.dondena %}
+        {% assign earlier_versions = true %}
+        <span class="earlier-versions-label">Earlier versions:</span>
+      {% endif %}
+      {% if entry.cepr %}
+        <a href="{{ entry.cepr }}" class="btn btn-sm z-depth-0" role="button">CEPR DP</a>
+      {% endif %}
+      {% if entry.iza %}
+        <a href="{{ entry.iza }}" class="btn btn-sm z-depth-0" role="button">IZA DP</a>
+      {% endif %}
+      {% if entry.dondena %}
+        <a href="{{ entry.dondena }}" class="btn btn-sm z-depth-0" role="button">DONDENA WP</a>
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
